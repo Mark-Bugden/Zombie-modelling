@@ -16,12 +16,11 @@ st.sidebar.header('Choose your country')
 
 
 # -- Create sidebar for plot controls
-st.sidebar.markdown('## Choose your country')
 selected_country = st.selectbox(
         "Which country would you like to view?",
-        ("Czechia", "Germany", "Other"),
-        label_visibility="visible"
+        ("Czechia", "Germany", "Other")
     )
+st.write('You selected:', option)
 
 
 
@@ -29,8 +28,6 @@ selected_country = st.selectbox(
 
 
 
-st.header('Display Companies in Selected Sector')
-st.write('Testing')
 
 
 
