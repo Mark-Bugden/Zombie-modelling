@@ -20,7 +20,7 @@ selected_country = st.selectbox(
         "Which country would you like to view?",
         ("Czechia", "Germany", "Other")
     )
-st.write('You selected:', option)
+st.write('You selected:', selected_country)
 
 
 
