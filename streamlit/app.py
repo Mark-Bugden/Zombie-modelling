@@ -2,13 +2,15 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
 
+from PIL import Image
+
+
+
 
 st.title('Zombie Modelling')
 
 st.markdown("""
-This app shows the results of mathematical modelling of a fictional Zombie Outbreak in various countries around the world. 
-* **Python libraries:** 
-* **Data source:** 
+This app shows the results of mathematical modelling of a fictional Zombie outbreak in various countries around the world. 
 """)
 
 st.sidebar.header('Choose your country')
@@ -23,7 +25,9 @@ selected_country = st.sidebar.selectbox(
 st.write('You selected:', selected_country)
 
 
+image = Image.open('app_imgs/test.jpg')
 
+st.image(image, caption='Test image')
 
 
 
