@@ -25,7 +25,7 @@ selected_country = st.sidebar.selectbox(
 st.write('You selected:', selected_country)
 
 
-image = Image.open("app_imgs/test.jpg")
+image = Image.open("test.avif")
 
 st.image(image, caption='Test image')
 
