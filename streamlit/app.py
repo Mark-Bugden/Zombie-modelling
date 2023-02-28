@@ -24,8 +24,8 @@ selected_country = st.sidebar.selectbox(
     )
 st.write('You selected:', selected_country)
 
-
-image = Image.open("streamlit/app_imgs/test.avif")
+#Doesn't accept avif files
+image = Image.open("streamlit/app_imgs/test.png")
 
 st.image(image, caption='Test image')
 
