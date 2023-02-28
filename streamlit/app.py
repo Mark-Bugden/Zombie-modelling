@@ -1,7 +1,7 @@
 import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
-
+import base64
 from PIL import Image
 
 
@@ -26,9 +26,16 @@ st.write('You selected:', selected_country)
 
 #Doesn't accept avif files
 #image = Image.open("streamlit/app_imgs/test.png")
-image = Image.open("movies/movie.gif")
 
-st.image(image, caption='Test image')
+
+file = open(r"movies/movie.gif", 'rb')
+contents = file.read()
+data_url = base64.b64encode(contents).decode('utf-8-sig')
+file.close()
+st.markdown(f'<img src="data:image/gif;base64,{data_url}>',unsafe_allow_html = True)
+
+
+#st.image(image, caption='Test image')
 
 
 
