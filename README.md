@@ -13,4 +13,6 @@ The repo folders are organised as follows:
 * **imgs**: Output images to be used for gif generation
 
 * **movies**: Output gifs made from images in imgs folder
+
+* **streamlit** Files for the interactive webapp
     
