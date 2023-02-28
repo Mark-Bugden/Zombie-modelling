@@ -16,7 +16,7 @@ st.sidebar.header('Choose your country')
 
 
 # -- Create sidebar for plot controls
-selected_country = st.selectbox(
+selected_country = st.sidebar.selectbox(
         "Which country would you like to view?",
         ("Czechia", "Germany", "Other")
     )
